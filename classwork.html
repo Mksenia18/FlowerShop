@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST.SWAMP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            padding: 20px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+        .nav {
+            display: flex;
+            gap: 20px;
+        }
+        .apartments {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .card {
+            width: calc(33.33% - 20px);
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card-content {
+            padding: 15px;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background: #caff33;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        @media (max-width: 900px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+            header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h2><strong>BEST.SWAMP</strong></h2>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">Verification</a>
+                <a href="#">Buy a property</a>
+                <a href="#">FAQ</a>
+            </nav>
+        </header>
+        <h2>Apartments</h2>
+        <div class="apartments">
+            <div class="card">
+                <img src="image.jpg" alt="Apartment">
+                <div class="card-content">
+                    <p>September 26, 2023</p>
+                    <h3>Apartment title</h3>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image.jpg" alt="Apartment">
+                <div class="card-content">
+                    <p>September 26, 2023</p>
+                    <h3>Apartment title</h3>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="image.jpg" alt="Apartment">
+                <div class="card-content">
+                    <p>September 26, 2023</p>
+                    <h3>Apartment title</h3>
+                    <button class="btn">Read More</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

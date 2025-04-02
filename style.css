@@ -62,7 +62,7 @@ body {
 }
 
 .products {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 40px 20px;
     display: flex;
@@ -93,9 +93,13 @@ body {
 }
 
 .newsletter {
+    height: 250px;
     max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
+    background-image: url("images/bouquet.jpg");
+    background-size: cover;
+    background-position: center;
     text-align: center;
     background-color: rgba(208, 200, 188, 0.5);
     border-radius: 5px;
@@ -139,7 +143,7 @@ body {
 }
 
 .footer {
-    background-color: #e8e2d9;
+    background-color: #AA998A;
     padding: 20px 0;
     border-top: 1px solid #d0c8bc;
     text-align: center;
@@ -152,11 +156,11 @@ body {
     margin-bottom: 15px;
 }
 
-/* Button styles */
+
 .btn {
     background-color: #e8e2d9;
     color: #333;
-    border: 1px solid #d0c8bc;
+    border: 1px solid #3c3935;
     padding: 8px 20px;
     border-radius: 3px;
     cursor: pointer;
@@ -164,5 +168,5 @@ body {
 }
 
 .btn:hover {
-    background-color: #d0c8bc;
+    background-color: #AA998A;
 }

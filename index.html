@@ -7,7 +7,6 @@
     <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    
     <header class="header">
         <nav class="nav">
             <div class="logo">
@@ -21,10 +20,23 @@
                 <a href="#">privacy policy</a>
                 <a href="#"><img src="images/cart.png" alt="Cart" width="25" height="20"></a>
             </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
         </nav>
     </header>
 
-    
+    <div class="mobile-menu">
+        <a href="#">chatbot</a>
+        <a href="#catalog_">catalog</a>
+        <a href="#delivery_">delivery</a>
+        <a href="#contacts_">contacts</a>
+        <a href="#">privacy policy</a>
+        <a href="#cart"><img src="images/cart.png" alt="Cart" width="25" height="20"></a>
+    </div>
+
     <section class="hero">
         <div class="hero-image">
             <img src="images/hero-bouquet.jpg" alt="Beautiful Flower Arrangement">
@@ -35,22 +47,23 @@
         </div>
     </section>
 
-    
-    <section class="products" id="catalog_">
-        <div class="product">
-            <img src="images/bouquet-1.jpg" alt="Flower Arrangement 1">
-            <div class="price">45$</div>
-            <button class="btn">buy now</button>
-        </div>
-        <div class="product">
-            <img src="images/bouquet-2.jpg" alt="Flower Arrangement 2">
-            <div class="price">50$</div>
-            <button class="btn">buy now</button>
-        </div>
-        <div class="product">
-            <img src="images/bouquet-3.jpg" alt="Flower Arrangement 3">
-            <div class="price">60$</div>
-            <button class="btn">buy now</button>
+    <section class="products-section" id="catalog_">
+        <div class="products">
+            <div class="product">
+                <img src="images/bouquet-1.jpg" alt="Flower Arrangement 1">
+                <div class="price">45$</div>
+                <button class="btn">buy now</button>
+            </div>
+            <div class="product">
+                <img src="images/bouquet-2.jpg" alt="Flower Arrangement 2">
+                <div class="price">50$</div>
+                <button class="btn">buy now</button>
+            </div>
+            <div class="product">
+                <img src="images/bouquet-3.jpg" alt="Flower Arrangement 3">
+                <div class="price">60$</div>
+                <button class="btn">buy now</button>
+            </div>
         </div>
     </section>
 
@@ -62,22 +75,23 @@
         </form>
     </section>
 
-    
-    <section class="products">
-        <div class="product">
-            <img src="images/bouquet-4.jpg" alt="Flower Arrangement 4">
-            <div class="price">55$</div>
-            <button class="btn">buy now</button>
-        </div>
-        <div class="product">
-            <img src="images/bouquet-5.jpg" alt="Flower Arrangement 5">
-            <div class="price">40$</div>
-            <button class="btn">buy now</button>
+    <section class="products-section">
+        <div class="products">
+            <div class="product">
+                <img src="images/bouquet-4.jpg" alt="Flower Arrangement 4">
+                <div class="price">55$</div>
+                <button class="btn">buy now</button>
+            </div>
+            <div class="product">
+                <img src="images/bouquet-5.jpg" alt="Flower Arrangement 5">
+                <div class="price">40$</div>
+                <button class="btn">buy now</button>
+            </div>
+            
         </div>
     </section>
 
-    
-    <section class="testimonials">
+    <section class="testimonials" id="contacts_">
         <h2>testimonials</h2>
         
         <div class="testimonial">
@@ -93,7 +107,7 @@
                 <strong>Tatiana (03.03.2025)</strong>
                 <div class="stars">★★★★★ 5.0</div>
             </div>
-            <p>Thank you very much❤️❤️❤️ For the opportunity to congratulate my relatives even from other countries???</p>
+            <p>Thank you very much❤️❤️❤️ For the opportunity to congratulate my relatives even from other countries!</p>
         </div>
         
         <div class="testimonial">
@@ -107,14 +121,34 @@
 
     <footer class="footer">
         <div class="social-icons">
-            <a href="#"><img src="images/instagram.png" ></a>
-            <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram.png" alt="Instagram" width="25" height="25"></a>
+            <a href="#"><img src="images/facebook.png" alt="Facebook" width="25" height="25"></a>
+            <a href="#"><img src="images/twitter.png" alt="Twitter" width="25" height="25"></a>
         </div>
         <div class="footer-links">
             <a href="#">chatbot</a> | 
             <a href="#">main</a> | 
-            <a href="#">delivery</a> | 
-            <a href="#">contacts</a>
+            <a href="#delivery_">delivery</a> | 
+            <a href="#contacts_">contacts</a>
         </div>
     </footer>
+
+    <script>
+        
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+
+        
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>

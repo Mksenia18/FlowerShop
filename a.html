@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+        }
+       .card{
+        border-radius: 5px;
+        box-shadow: 0px 4px 12px rgba(17, 34, 17, 0.1);
+        width:300px;
+        overflow: hidden;
+       }
+       .card-image{
+        width: 100%;
+        height:220px;
+        object-fit:cover;
+       }
+       .card-description{
+        padding: 24px;
+       }
+       .card-description-date{
+        color: grey;
+        font-size: 15px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: normal;
+        margin-bottom: 8px;
+       }
+       .card-description-title{
+        color: black;
+        font-size: 24px;
+        margin:0;
+        margin-bottom: 16px;
+       }
+       .card-description-button{
+        background-color: yellowgreen;
+        width: 100%;
+        border:none;
+        color:white;
+        border-radius: 5px;
+        font-size: 16px;
+        padding: 16px;
+        cursor: pointer;
+        font-weight: 600;
+       }
+       .card-description-button-title{
+        color: black;
+        margin:0;
+       }
+       .card-image-container{
+        position: relative;
+       }
+       .card-icon-button{
+        top: 16px;
+        right: 16px;
+        background-color: white;
+        border-radius: 50%;
+        width: 18px;
+        height: 18px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       }
+       .card-icon-button > p{
+        margin: 0;
+       }
+       .card-container{
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        column-gap: 10px;
+       }
+       .navigation{
+        display: none;
+       }
+       .navigation a{
+        text-decoration: none;
+        color: black;
+       }
+       header{
+        padding: 20px;
+        display: flex;
+        position: sticky;
+        box-shadow: 0px 4px 12px rgba(17, 34, 17, 0.1);
+        z-index: 1;
+        justify-content: space-between;
+        width: 100%;
+        background-color: white;
+        align-items: center;
+        top:0;
+       }
+
+       @media screen and (min-width: 744px) {
+        .card{
+            width: calc(50%-12px);
+        }
+        .card-container{
+            flex-direction:unset;
+            flex-wrap: wrap;
+        }
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+            column-gap: 12px;
+        }
+       }
+       @media screen and (min-width: 1244px){
+        .card{
+            width: calc((100%/3)-12px);
+        }
+        .card-container{
+            flex-direction:unset;
+            flex-wrap: wrap;
+        }
+       }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Best.swamp</h1>
+        <nav class="navigation">
+            <a href="">Home</a>
+            <a href="">Verification</a>
+            <a href="">Buy a property</a>
+            <a href="">FAQ</a>
+        </nav>
+    </header>
+    <main class="card-container">
+        <div class="card">
+            <div class="card-image-container">
+                <button class="card-icon-button">
+                    <p class="icon">♡</p>
+                </button>
+                <img class="card-image" src="images/image.png">
+            </div>
+            <div class="card-description">
+                <h2 class="card-description-date">Date</h2>
+                <h1 class="card-description-title">Apartment title</h1>
+                <button class="card-description-button">
+                    <p class="card-description-button-title">Read me</p>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <button class="card-icon-button">
+                    <p class="icon">♡</p>
+                </button>
+                <img class="card-image" src="images/image.png">
+            </div>
+            <div class="card-description">
+                <h2 class="card-description-date">Date</h2>
+                <h1 class="card-description-title">Apartment title</h1>
+                <button class="card-description-button">
+                    <p class="card-description-button-title">Read me</p>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <button class="card-icon-button">
+                    <p class="icon">♡</p>
+                </button>
+                <img class="card-image" src="images/image.png">
+            </div>
+            <div class="card-description">
+                <h2 class="card-description-date">Date</h2>
+                <h1 class="card-description-title">Apartment title</h1>
+                <button class="card-description-button">
+                    <p class="card-description-button-title">Read me</p>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <button class="card-icon-button">
+                    <p class="icon">♡</p>
+                </button>
+                <img class="card-image" src="images/image.png">
+            </div>
+            <div class="card-description">
+                <h2 class="card-description-date">Date</h2>
+                <h1 class="card-description-title">Apartment title</h1>
+                <button class="card-description-button">
+                    <p class="card-description-button-title">Read me</p>
+                </button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-image-container">
+                <button class="card-icon-button">
+                    <p class="icon">♡</p>
+                </button>
+                <img class="card-image" src="images/image.png">
+            </div>
+            <div class="card-description">
+                <h2 class="card-description-date">Date</h2>
+                <h1 class="card-description-title">Apartment title</h1>
+                <button class="card-description-button">
+                    <p class="card-description-button-title">Read me</p>
+                </button>
+            </div>
+        </div>
+    </main>
+    </body>
+    </html>
+    

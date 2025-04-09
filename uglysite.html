@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Ugly Page</title>
+    <style>
+        body {
+            background: repeating-linear-gradient(
+                45deg,
+                red, red 10px,
+                yellow 10px, yellow 20px,
+                lime 20px, lime 30px,
+                cyan 30px, cyan 40px,
+                magenta 40px, magenta 50px
+            );
+            animation: stripeMove 0.5s infinite linear;
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        @keyframes stripeMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 50px 50px; }
+        }
+
+        h1 {
+            color: yellow;
+            text-shadow: 3px 3px 0 red;
+            font-size: 3rem;
+            text-align: center;
+            animation: wobble 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes wobble {
+            0% { transform: rotate(-5deg); }
+            100% { transform: rotate(5deg); }
+        }
+
+        .runaway-btn {
+            position: absolute;
+            background-color: red;
+            color: white;
+            font-size: 20px;
+            padding: 10px 20px;
+            border: 3px dashed yellow;
+            cursor: pointer;
+            animation: pulse 1s infinite alternate, moveButton 5s infinite alternate;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            100% { transform: scale(1.1); }
+        }
+
+        @keyframes moveButton {
+            0% { top: 10%; left: 10%; }
+            25% { top: 10%; left: 80%; }
+            50% { top: 80%; left: 80%; }
+            75% { top: 80%; left: 10%; }
+            100% { top: 10%; left: 10%; }
+        }
+
+        .runaway-btn:hover {
+            transform: scale(1.1);
+            background-color: orange;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(255, 0, 255, 0.3);
+            border: 5px dotted yellow;
+        }
+
+        p {
+            font-size: 20px;
+            color: white;
+            background: purple;
+            padding: 10px;
+            margin: 15px 0;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+            animation: shake 0.5s infinite;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+        }
+
+        p:hover {
+            transform: rotate(10deg) scale(1.1);
+            background: orange;
+        }
+
+        .blinker {
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            animation: blink 0.5s infinite alternate;
+        }
+
+        @keyframes blink {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .color-changer {
+            padding: 15px;
+            margin: 20px auto;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            animation: colorChange 2s infinite;
+        }
+
+        @keyframes colorChange {
+            0% { background-color: red; color: white; }
+            33% { background-color: green; color: yellow; }
+            66% { background-color: blue; color: orange; }
+            100% { background-color: red; color: white; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ugly Animations Page</h1>
+        
+        <p>This is a simplified page with various CSS animations and transitions to create a visually chaotic experience.</p>
+        
+        <div class="blinker">This text keeps blinking!</div>
+        
+        <div class="spinner">I'm spinning!</div>
+        
+        <div class="bouncer">Bounce!</div>
+        
+        <div class="color-changer">My colors keep changing!</div>
+        
+        <div class="runaway-btn">Try to catch me!</div>
+        
+        <p>Hover over this text to see a transition effect!</p>
+    </div>
+</body>
+</html>

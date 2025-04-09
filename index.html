@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowers For Your Home</title>
     <link href="style.css" rel="stylesheet">
+    
 </head>
 <body>
     <header class="header">
@@ -12,30 +13,29 @@
             <div class="logo">
                 <img src="images/logo.png" alt="Flower Shop Logo" width="50" height="35">
             </div>
+            
+            
+            
             <div class="nav-links">
-                <a href="#">chatbot</a>
+                <a href="chatbot.html" id="chatbot_">chatbot</a>
                 <a href="#catalog_">catalog</a>
-                <a href="#delivery_">delivery</a>
+                <a href="delivery.html" id="delivery_">delivery</a>
                 <a href="#contacts_">contacts</a>
                 <a href="#">privacy policy</a>
                 <a href="#"><img src="images/cart.png" alt="Cart" width="25" height="20"></a>
             </div>
-            <div class="hamburger">
+
+            
+            <label for="menu-toggle" class="hamburger">
                 <div></div>
                 <div></div>
                 <div></div>
-            </div>
+            </label>
         </nav>
     </header>
 
-    <div class="mobile-menu">
-        <a href="#">chatbot</a>
-        <a href="#catalog_">catalog</a>
-        <a href="#delivery_">delivery</a>
-        <a href="#contacts_">contacts</a>
-        <a href="#">privacy policy</a>
-        <a href="#cart"><img src="images/cart.png" alt="Cart" width="25" height="20"></a>
-    </div>
+    
+    
 
     <section class="hero">
         <div class="hero-image">
@@ -74,7 +74,6 @@
             <button type="submit" class="btn">Sign up</button>
         </form>
     </section>
-
     <section class="products-section">
         <div class="products">
             <div class="product">
@@ -93,7 +92,6 @@
 
     <section class="testimonials" id="contacts_">
         <h2>testimonials</h2>
-        
         <div class="testimonial">
             <div class="testimonial-header">
                 <strong>Max (04.03.2025)</strong>
@@ -101,7 +99,6 @@
             </div>
             <p>I adored! You. I ordered from fit-fit. My beloved sent me a photo at fit. Very work perfectly and most importantly. My beloved is happy.</p>
         </div>
-        
         <div class="testimonial">
             <div class="testimonial-header">
                 <strong>Tatiana (03.03.2025)</strong>
@@ -109,7 +106,6 @@
             </div>
             <p>Thank you very much❤️❤️❤️ For the opportunity to congratulate my relatives even from other countries!</p>
         </div>
-        
         <div class="testimonial">
             <div class="testimonial-header">
                 <strong>Natalia Igorhettenko (03.03.2025)</strong>
@@ -132,23 +128,5 @@
             <a href="#contacts_">contacts</a>
         </div>
     </footer>
-
-    <script>
-        
-        const hamburger = document.querySelector('.hamburger');
-        const mobileMenu = document.querySelector('.mobile-menu');
-        
-        hamburger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-        });
-
-        
-        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
-        mobileMenuLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenu.classList.remove('active');
-            });
-        });
-    </script>
 </body>
 </html>

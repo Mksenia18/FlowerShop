@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot - Flowers For Your Home</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+        }
+        
+        .page-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+        
+        .chatbot-modal {
+            background-color: white;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .modal-header {
+            position: relative;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        .close-button {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .telegram-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .welcome-text {
+            margin: 15px 0;
+            padding: 10px 20px;
+            background-color: #f2f2f2;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .telegram-username {
+            margin: 15px 0;
+            padding: 10px 20px;
+            background-color: #f2f2f2;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #5e72e4;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="logo">
+                <img src="images/logo.png" alt="Flower Shop Logo" width="50" height="35">
+            </div>
+            <div class="nav-links">
+                <a href="chatbot.html" id="chatbot_" class="active">chatbot</a>
+                <a href="index.html#catalog_">catalog</a>
+                <a href="delivery.html" id="delivery_">delivery</a>
+                <a href="index.html#contacts_">contacts</a>
+                <a href="#">privacy policy</a>
+                <a href="#"><img src="images/cart.png" alt="Cart" width="25" height="20"></a>
+            </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="mobile-menu">
+        <a href="chatbot.html" class="active">chatbot</a>
+        <a href="index.html#catalog_">catalog</a>
+        <a href="delivery.html">delivery</a>
+        <a href="index.html#contacts_">contacts</a>
+        <a href="#">privacy policy</a>
+        <a href="#cart"><img src="images/cart.png" alt="Cart" width="25" height="20"></a>
+    </div>
+
+    
+    <div class="page-background"></div>
+
+    <div class="modal-overlay" id="chatbotModal">
+        <div class="chatbot-modal">
+            <div class="modal-header">
+                <a href="index.html" class="close-button">X</a>
+            </div>
+            <div class="telegram-icon">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram" class="telegram-logo">
+            </div>
+            <div class="welcome-text">
+                Welcome to chatbot
+            </div>
+            <div class="telegram-username">
+                <a href="#">@flowers_for_your_home</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

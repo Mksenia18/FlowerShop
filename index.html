@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flowers For Your Home</title>
+    <meta name="description" content="Fresh flower bouquets and arrangements for delivery. Beautiful flower arrangements for any occasion with same-day delivery options.">
+    <meta name="keywords" content="flower shop, flower delivery, bouquets, floral arrangements, fresh flowers, flowers for mother's day, flowers for birthday, flowers for anniversary, mothers day flowers delivery, birthday flowers delivery, anniversary flowers delivery, valentine's day flowers delivery, flowers for valentine's day, flowers for wedding, wedding flowers delivery, flower arrangements for home decor, flower arrangements for office decor, seasonal flowers delivery">
+    <title>Flowers For Your Home | Fresh Bouquets & Flower Delivery</title>
     <link href="style.css" rel="stylesheet">
+
+    
     
 </head>
 <body>
     <header class="header">
         <nav class="nav">
             <div class="logo">
-                <img src="images/logo.png" alt="Flower Shop Logo" width="50" height="35">
+                <img src="images/logo.png" alt="Flowers For Your Home - Online Flower Shop Logo" width="50" height="35">
             </div>
             
             
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
             
             <div class="nav-links">
                 <a href="chatbot.html" id="chatbot_">chatbot</a>
@@ -22,9 +27,16 @@
                 <a href="delivery.html" id="delivery_">delivery</a>
                 <a href="#contacts_">contacts</a>
                 <a href="#">privacy policy</a>
-                <a href="#"><img src="images/cart.png" alt="Cart" width="25" height="20"></a>
+                <a href="#"><img src="images/cart.png" alt="Shopping Cart" width="25" height="20"></a>
             </div>
 
+            
+            <div class="mobile-menu">
+                <a href="chatbot.html">chatbot</a>
+                <a href="#catalog_">catalog</a>
+                <a href="delivery.html">delivery</a>
+                <a href="#contacts_">contacts</a>
+            </div>
             
             <label for="menu-toggle" class="hamburger">
                 <div></div>
@@ -37,83 +49,95 @@
     
     
 
-    <section class="hero">
-        <div class="hero-image">
-            <img src="images/hero-bouquet.jpg" alt="Beautiful Flower Arrangement">
-        </div>
-        <div class="hero-text">
-            <h1>Flowers For Your Home</h1>
-            <button class="btn">Buy now</button>
-        </div>
-    </section>
+    <main>
+        <section class="hero">
+            <div class="hero-image">
+                <img src="images/hero-bouquet.jpg" alt="Premium Fresh Flower Arrangement with Seasonal Blooms">
+            </div>
+            <div class="hero-text">
+                <h1>Beautiful Fresh Flowers For Your Home</h1>
+                <button class="btn">Order Now</button>
+            </div>
+        </section>
 
-    <section class="products-section" id="catalog_">
-        <div class="products">
-            <div class="product">
-                <img src="images/bouquet-1.jpg" alt="Flower Arrangement 1">
-                <div class="price">45$</div>
-                <button class="btn">buy now</button>
+        <section class="products-section" id="catalog_">
+            <h2>Popular Flower Arrangements</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images/bouquet-1.jpg" alt="Spring Mixed Flower Bouquet with Roses and Lilies">
+                    <div class="price">45$</div>
+                    <h3>Spring Medley</h3>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/bouquet-2.jpg" alt="Elegant Rose and Tulip Arrangement">
+                    <div class="price">50$</div>
+                    <h3>Elegant Romance</h3>
+                    <button class="btn">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/bouquet-3.jpg" alt="Luxury Mixed Flower Arrangement with Seasonal Blooms">
+                    <div class="price">60$</div>
+                    <h3>Luxury Bloom Mix</h3>
+                    <button class="btn">Add to Cart</button>
+                </div>
             </div>
-            <div class="product">
-                <img src="images/bouquet-2.jpg" alt="Flower Arrangement 2">
-                <div class="price">50$</div>
-                <button class="btn">buy now</button>
-            </div>
-            <div class="product">
-                <img src="images/bouquet-3.jpg" alt="Flower Arrangement 3">
-                <div class="price">60$</div>
-                <button class="btn">buy now</button>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="newsletter">
-        <h3>Sign up to receive news and updates</h3>
-        <form>
-            <input type="email" placeholder="Email Address">
-            <button type="submit" class="btn">Sign up</button>
-        </form>
-    </section>
-    <section class="products-section">
-        <div class="products">
-            <div class="product">
-                <img src="images/bouquet-4.jpg" alt="Flower Arrangement 4">
-                <div class="price">55$</div>
-                <button class="btn">buy now</button>
-            </div>
-            <div class="product">
-                <img src="images/bouquet-5.jpg" alt="Flower Arrangement 5">
-                <div class="price">40$</div>
-                <button class="btn">buy now</button>
-            </div>
-            
-        </div>
-    </section>
+        <section class="newsletter">
+            <h3>Subscribe to Our Flower Newsletter</h3>
+            <form>
+                
+                <input type="email" id="email" placeholder="Your Email Address" aria-label="Email Address">
+                <button type="submit" class="btn">Subscribe to Updates</button>
+            </form>
+        </section>
 
-    <section class="testimonials" id="contacts_">
-        <h2>testimonials</h2>
-        <div class="testimonial">
-            <div class="testimonial-header">
-                <strong>Max (04.03.2025)</strong>
-                <div class="stars">★★★★★ 5.0</div>
+        <section class="products-section">
+            <h2>Special Occasion Bouquets</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="images/bouquet-4.jpg" alt="Birthday Celebration Flower Arrangement with Bright Colors">
+                    <div class="price">55$</div>
+                    <h3>Birthday Celebration</h3>
+                    <button class="btn">Add Bouquet to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="images/bouquet-5.jpg" alt="Anniversary Rose Bouquet with Premium Red Roses">
+                    <div class="price">40$</div>
+                    <h3>Anniversary Roses</h3>
+                    <button class="btn">Add Bouquet to Cart</button>
+                </div>
             </div>
-            <p>I adored! You. I ordered from fit-fit. My beloved sent me a photo at fit. Very work perfectly and most importantly. My beloved is happy.</p>
-        </div>
-        <div class="testimonial">
-            <div class="testimonial-header">
-                <strong>Tatiana (03.03.2025)</strong>
-                <div class="stars">★★★★★ 5.0</div>
+        </section>
+
+        <section class="testimonials" id="contacts_">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial-container">
+                <article class="testimonial">
+                    <div class="testimonial-header">
+                        <strong>Max (04.03.2025)</strong>
+                        <div class="stars">★★★★★ 5.0</div>
+                    </div>
+                    <p>I adored! You. I ordered from fit-fit. My beloved sent me a photo at fit. Very work perfectly and most importantly. My beloved is happy.</p>
+                </article>
+                <article class="testimonial">
+                    <div class="testimonial-header">
+                        <strong>Tatiana (03.03.2025)</strong>
+                        <div class="stars">★★★★★ 5.0</div>
+                    </div>
+                    <p>Thank you very much❤️❤️❤️ For the opportunity to congratulate my relatives even from other countries!</p>
+                </article>
+                <article class="testimonial">
+                    <div class="testimonial-header">
+                        <strong>Natalia Igorhettenko (03.03.2025)</strong>
+                        <div class="stars">★★★★★ 5.0</div>
+                    </div>
+                    <p>Thank you. The bouquet is excellent. The recipient is happy. It's a pity I can't attach a photo.</p>
+                </article>
             </div>
-            <p>Thank you very much❤️❤️❤️ For the opportunity to congratulate my relatives even from other countries!</p>
-        </div>
-        <div class="testimonial">
-            <div class="testimonial-header">
-                <strong>Natalia Igorhettenko (03.03.2025)</strong>
-                <div class="stars">★★★★★ 5.0</div>
-            </div>
-            <p>Thank you. The bouquet is excellent. The recipient is happy. It's a pity I can't attach a photo.</p>
-        </div>
-    </section>
+        </section>
+</main>
 
     <footer class="footer">
         <div class="social-icons">
@@ -122,9 +146,9 @@
             <a href="#"><img src="images/twitter.png" alt="Twitter" width="25" height="25"></a>
         </div>
         <div class="footer-links">
-            <a href="#">chatbot</a> | 
+            <a href="chatbot.html" id="chatbot_">chatbot</a>| 
             <a href="#">main</a> | 
-            <a href="#delivery_">delivery</a> | 
+            <a href="delivery.html" id="delivery_">delivery</a>| 
             <a href="#contacts_">contacts</a>
         </div>
     </footer>

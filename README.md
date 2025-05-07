@@ -26,3 +26,15 @@ Used `.reduce()` to sum title lengths.
 Used `.sort()` to order cards alphabetically.
 Used `.filter()` to find cards with specific keywords.
 Used `.map()` to extract titles.
+
+
+projecrt12
+    - Function declarations (like calculateArea and getCalculation) are hoisted, so they are available before their definition.
+    - Function expressions (like calculatePerimeter) are NOT hoisted. Accessing them before their definition gives 'undefined'.
+    - That's why getCalculation("perimeter") would fail before calculatePerimeter is defined.
+    - Only function declarations are available in the global scope before their definition.
+    - This demonstrates why function expressions can't be used before declaration.
+    - The main difference between arrow functions and regular functions is how they handle 'this' and 'arguments'
+    - Default parameters provide fallback values.
+    - Regular functions bind 'this' to the object; arrow functions inherit 'this' from the outer scope.
+    - 'var' is function-scoped and leaks out of blocks; 'let' is block-scoped and does not leak.
